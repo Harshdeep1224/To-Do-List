@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌿 To-Do List</h1>
+    <p class="goal">Main Goal: <input type="text" placeholder="Enter your goal..."></p>
+
+    <div class="board">
+
+        <!-- MUST DO -->
+        <div class="column red">
+            <h2>Must Do</h2>
+            <div class="task-input">
+                <input type="text" placeholder="Add task">
+                <button onclick="addTask(this)">+</button>
+            </div>
+            <ul></ul>
+        </div>
+
+        <!-- SHOULD DO -->
+        <div class="column blue">
+            <h2>Should Do</h2>
+            <div class="task-input">
+                <input type="text" placeholder="Add task">
+                <button onclick="addTask(this)">+</button>
+            </div>
+            <ul></ul>
+        </div>
+
+        <!-- COULD DO -->
+        <div class="column green">
+            <h2>Could Do</h2>
+            <div class="task-input">
+                <input type="text" placeholder="Add task">
+                <button onclick="addTask(this)">+</button>
+            </div>
+            <ul></ul>
+        </div>
+
+        <!-- IF I HAVE TIME -->
+        <div class="column purple">
+            <h2>If I Have Time</h2>
+            <div class="task-input">
+                <input type="text" placeholder="Add task">
+                <button onclick="addTask(this)">+</button>
+            </div>
+            <ul></ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
